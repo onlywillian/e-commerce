@@ -1,0 +1,15 @@
+.aside-container {
+    margin: 20px;
+    width: 15%;
+    display: flex;
+    flex-direction: column; 
+}
+.aside-container span {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(233, 233, 233);
+    margin: 10px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    align-items: center;
+}
