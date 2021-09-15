@@ -3,8 +3,45 @@
         "data": [
             {
                 "id": "5afadg5d23g8ew67terw8",
-                "color": "white",
-                "type": "pocoyo"
+                "name": "Toalha de Banho",
+                "color": "Branca",
+                "category": "Toalhas",
+                "price": "R$ 30,99",
+                "image": "https://images-shoptime.b2w.io/produtos/01/00/img/1838252/8/1838252842_1GG.jpg"
+            },
+            {
+                "id": "a56adg4d56g7we98qwr74",
+                "name": "Toalha de Banho",
+                "color": "Azul",
+                "category": "Toalhas",
+                "price": "R$ 30,99",
+                "image": "https://imageswscdn.wslojas.com.br/files/22589/MED_toalha-royal-billy-banho-santista-942134.jpg"
+            },
+            {
+                "id": "safsa5g486tw798gweg56",
+                "name": "Toalha de Banho",
+                "color": "Laranja",
+                "category": "Toalhas",
+                "price": "R$ 30,99",
+                "image": "https://dgn7v532p0g5j.cloudfront.net/unsafe/products/photos/still/sanprtrozve2073-1617020559785.jpg"
+            },
+            {
+                "id": "54eg654grewge43rh45",
+                "name": "Kaiak Aventura",
+                "brand": "Kaiak",
+                "color": "Azul",
+                "category": "Perfumes",
+                "price": "79,90",
+                "image": "https://images-shoptime.b2w.io/produtos/01/00/img/1684193/6/1684193631_1GG.jpg"
+            },
+            {
+                "id": "as5fg4sa5g4a5g4agad",
+                "name": "Ekos Maracujá",
+                "brand": "Ekos",
+                "color": "Marrom",
+                "category": "Perfumes",
+                "price": "59,99",
+                "image": "https://images-americanas.b2w.io/produtos/01/00/img/1810562/8/1810562814_1GG.jpg"
             }
         ]
     }

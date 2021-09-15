@@ -7,7 +7,7 @@ const Search = () => {
     return ( 
         <div className="search-container">
             <div className="search-box">
-                <input type="text" className="search-input" placeholder="Write Something" />
+                <input type="text" className="search-input" placeholder="Escreva Algo..." />
                 <div className="search-filter">
                     <span>Todos</span>
                     <span>Toalhas</span>

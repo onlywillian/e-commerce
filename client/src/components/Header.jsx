@@ -14,7 +14,7 @@ const Header = () => {
             </div>
             <div className="user-bar">
                 <IoHeartOutline style={{cursor: 'pointer'}} />
-                <IoBasketOutline style={{cursor: 'pointer'}} />
+                <IoBasketOutline style={{cursor: 'pointer'}} className="middle-icon" />
                 <div className="user-image"></div>
             </div>
         </div>
