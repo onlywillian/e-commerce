@@ -1,29 +1,29 @@
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 import './App.css';
 import Header from './components/Header';
-import Search from './components/Search';
-import Aside from './components/Aside';
-import Itens from './components/Itens';
-import ItenDetails from './components/ItenDetails'
+import Search from './components/home/Search';
+import Aside from './components/home/Aside';
+import Itens from './components/home/Itens';
+import ItenDetails from './components/details/ItenDetails'
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="app" >
         <Header />
-        <Search />
-        <Route path="/" render={() => (
+        <Route path="/" exact render={() => (
           <>
+            <Search />
             <div className="user-content">
               <Aside />
               <Itens />
             </div>
           </>
         )}/>
-        <Route path="/iten/:iten-id" exact component={ItenDetails}/>
       </div>
-    </BrowserRouter>
+        <Route path="/:id" exact component={ItenDetails} />
+    </Router>
   );
 }
 
