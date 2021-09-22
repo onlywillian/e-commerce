@@ -1,0 +1,17 @@
+.iten-content {
+    display: flex;
+    width: 20vw;
+    height: 400px;
+    background: white;
+    margin: 0 50px;
+    cursor: pointer;
+    display: grid;
+    margin-bottom: 10vw;
+}
+.iten-content img {
+    height: 20vw;
+    width: 100%;
+}
+.iten-content h4 {
+    color: gray;
+}
