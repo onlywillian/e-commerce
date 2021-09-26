@@ -3,15 +3,17 @@ import { IoHeartOutline } from 'react-icons/io5'
 
 import Button from '../Button'
 
-const ItenVariantions = () => {
+import './ItenVariantions.css'
+
+const ItenVariantions = ({ size }) => {
     return ( 
         <div className="iten-variations">
             <div className="size-config">
-                <h2>Tamanhos:</h2>
-                <span className="size-block">70 x 140</span>
+                <h2>Dimensões:</h2>
+                <span className="size-block">{ size }</span>
             </div>
             <div className="color-config">
-                <h2>Color:</h2>
+                <h2>Cor:</h2>
                 <span className="color"></span>
             </div>
             <div className="buy-options">

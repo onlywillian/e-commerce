@@ -40,7 +40,7 @@ const ItenDetails = () => {
             <div className="iten-image">
                 <img src={iten.image} alt="Iten Image" />
             </div>
-            <ItenVariantions />
+            <ItenVariantions size={iten.size}/>
         </div>
      );
 }

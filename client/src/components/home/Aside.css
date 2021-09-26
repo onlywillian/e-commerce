@@ -16,6 +16,5 @@
     transition: .5s;
 }
 .aside-container span:hover {
-    background: black;
-    color: white;
+    background: rgb(197, 197, 197);
 }

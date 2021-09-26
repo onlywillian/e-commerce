@@ -14,16 +14,18 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-self: flex-end;
+    margin-bottom: 50px;
 }
 .buy-options span {
     height: 50px;
     width: 50px;
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid rgb(216, 216, 216);
     justify-content: center;
-    border-radius: 15px;
-    font-size: 50px;
+    border-radius: 50px;
+    font-size: 30px;
     cursor: pointer;
     margin-right: 20px;
 }

@@ -1,17 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IoSearchOutline } from 'react-icons/io5'
 
 import './Search.css'
 
 const Search = () => {
+    const [filters, setFilters] = useState([
+        {
+            value: "Todos",
+            marked: true
+        },
+        {
+            value: "Toalhas",
+            marked: false
+        },
+        {
+            value: "Perfumes",
+            marked: false
+        }
+    ]);
+
+    function handleFilterClick(value) {
+        filters.filter(element => {
+            if (element.marked !== true)
+        });
+    }
+
     return ( 
         <div className="search-container">
             <div className="search-box">
                 <input type="text" className="search-input" placeholder="Escreva Algo..." />
                 <div className="search-filter">
-                    <span>Todos</span>
-                    <span>Toalhas</span>
-                    <span>Perfumes</span>
+                    {filters.map(filter => (
+                        <span 
+                            style={filter.marked ? {backgroundColor: 'black', color: 'white'}
+                             : {backgroundColor: 'white', color: 'black'}}
+
+                            onClick={() => handleFilterClick(filter.value)}
+                        >
+                            {filter.value}
+                        </span>
+                    ))}
                 </div>
             </div>
             <div className="search-button">
