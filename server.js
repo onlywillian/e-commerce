@@ -13,9 +13,6 @@ consign({ cwd: 'api'})
     .then('routes')
     .into(app);
 
-// API end-point
-app.get("/api", (req, res) => {
-    res.json({ message: "Vai se fuder" });
-});
+require('./auth/controller/authController')(app);
 
 app.listen(PORT, () => console.log('listening 3333'));
