@@ -16,6 +16,8 @@
   "dependencies": {
     "consign": "^0.1.6",
     "express": "^4.17.1",
-    "mongoose": "^5.13.10"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.10",
+    "npm": "^8.0.0"
   }
 }

@@ -20,9 +20,13 @@ const Search = () => {
     ]);
 
     function handleFilterClick(value) {
-        filters.filter(element => {
-            if (element.marked !== true)
+        const newFilters = filters.map(element => {
+            if (element.value === value) return {...element, marked: true};
+            
+            return {...element, marked: false};
         });
+
+        setFilters(newFilters);
     }
 
     return ( 
@@ -32,8 +36,7 @@ const Search = () => {
                 <div className="search-filter">
                     {filters.map(filter => (
                         <span 
-                            style={filter.marked ? {backgroundColor: 'black', color: 'white'}
-                             : {backgroundColor: 'white', color: 'black'}}
+                            style={filter.marked ? {backgroundColor: 'black', color: 'white'} : {}}
 
                             onClick={() => handleFilterClick(filter.value)}
                         >

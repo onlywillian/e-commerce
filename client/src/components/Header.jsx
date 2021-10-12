@@ -1,6 +1,8 @@
 import React from 'react';
 import { IoHeartOutline, IoBasketOutline } from 'react-icons/io5'
 
+import UserAccount from './UserAccount';
+
 import './Header.css'
 
 const Header = () => {
@@ -15,7 +17,7 @@ const Header = () => {
             <div className="user-bar">
                 <IoHeartOutline style={{cursor: 'pointer'}} />
                 <IoBasketOutline style={{cursor: 'pointer'}} className="middle-icon" />
-                <div className="user-image"></div>
+                <UserAccount />
             </div>
         </div>
      );
