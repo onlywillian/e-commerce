@@ -5,12 +5,13 @@ import Header from './components/Header';
 import Search from './components/home/Search';
 import Aside from './components/home/Aside';
 import Itens from './components/home/Itens';
-import ItenDetails from './components/details/ItenDetails'
+import ItenDetails from './components/details/ItenDetails';
+import RegisterForm from './components/Sign/RegisterForm';
 
 function App() {
   return (
     <Router>
-      <div className="app" >
+      <div className="app">
         <Header />
         <Route path="/" exact render={() => (
           <>
@@ -22,7 +23,8 @@ function App() {
           </>
         )}/>
       </div>
-        <Route path="/:id" exact component={ItenDetails} />
+        <Route path="/product/:id" exact component={ItenDetails} />
+        <Route path="/registrar" exact component={RegisterForm} />
     </Router>
   );
 }

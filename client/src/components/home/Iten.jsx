@@ -7,7 +7,7 @@ const Iten = ({ pic, price, name, id }) => {
     const history = useHistory();
     
     function handleItenClick() {
-        history.push(`/${id}`)
+        history.push(`/product/${id}`)
     }
 
     return ( 
