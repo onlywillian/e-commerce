@@ -12,9 +12,9 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Header />
         <Route path="/" exact render={() => (
           <>
+            <Header />
             <Search />
             <div className="user-content">
               <Aside />
@@ -23,8 +23,13 @@ function App() {
           </>
         )}/>
       </div>
-        <Route path="/product/:id" exact component={ItenDetails} />
-        <Route path="/registrar" exact component={RegisterForm} />
+      <Route path="/product/:id" exact render={() => (
+        <>
+          <Header />
+          <ItenDetails />
+        </>
+      )} />
+      <Route path="/registrar" exact component={RegisterForm} />
     </Router>
   );
 }

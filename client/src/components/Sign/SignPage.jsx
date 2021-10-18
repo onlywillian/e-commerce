@@ -3,11 +3,11 @@ import React from 'react';
 import './SignPage.css';
 
 const SignPage = () => {
-    return ( 
+    return (
         <>
             
         </>
-     );
+    );
 }
  
 export default SignPage;
